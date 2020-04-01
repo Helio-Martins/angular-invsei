@@ -40,7 +40,7 @@ import { AuthorService } from './author.service';
     NewAuthorComponent,
     NewGenreComponent,
     NewBookComponent,
-    NewBookInstanceComponent,
+    NewBookInstanceComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [BookService, AuthorService]
