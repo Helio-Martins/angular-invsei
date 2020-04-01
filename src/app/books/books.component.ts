@@ -9,7 +9,7 @@ import { BookService } from '../book.service';
   styleUrls: ['./books.component.css']
 })
 export class BooksComponent implements OnInit {
-  books: Book[];
+  book_list: Book[];
 
   constructor(private bookService: BookService) { }
 
@@ -18,7 +18,6 @@ export class BooksComponent implements OnInit {
   }
 
   getBooks(): void {
-    this.bookService.getBooks()
-    .subscribe(books => this.books = JSON.parse(books));
+    this.bookService.getBooks() .subscribe(books => this.book_list = JSON.parse(books));
   }
 }
