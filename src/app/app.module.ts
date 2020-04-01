@@ -22,6 +22,7 @@ import { BookService } from './book.service';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

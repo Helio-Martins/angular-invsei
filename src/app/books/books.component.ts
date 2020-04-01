@@ -12,7 +12,7 @@ export class BooksComponent implements OnInit {
   books: Book[];
 
   constructor(private bookService: BookService) { }
-
+  
   ngOnInit() {
     this.getBooks();
   }
@@ -20,4 +20,5 @@ export class BooksComponent implements OnInit {
   getBooks(): void {
     this.bookService.getBooks().subscribe(books => this.books = JSON.parse(books));
   }
+  
 }
