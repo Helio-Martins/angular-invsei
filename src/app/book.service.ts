@@ -9,12 +9,12 @@ import { Book } from './book';
 @Injectable({ providedIn: 'root' })
 export class BookService {
 
-  private uri: 'http://localhost:3000';
+  private uri: 'http://localhost:3000/book_list';
 
   constructor(private http: HttpClient) { }
 
-  getBooks (): Observable<Book[]> {
-    return this.http.get<Book[]>(this.uri);
+  getBooks (): Observable<any> {
+    return this.http.get<any>(this.uri);
   }
 
 }
