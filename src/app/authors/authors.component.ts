@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Author } from '../author';
 import { AuthorService } from '../author.service';
 
@@ -17,7 +18,7 @@ export class AuthorsComponent implements OnInit {
   }
 
   getAuthors(): void {
-    this.authorService.getAuthors().subscribe(authors => this.authors = authors);
+    this.authorService.getAuthors() .subscribe(authors => this.authors = JSON.parse(authors));
     console.log(this.authors);
   }
   
