@@ -38,4 +38,4 @@ public mygetdata(): Observable<Data[]> {
             }
         })
 }
-*
+*/

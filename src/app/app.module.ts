@@ -16,6 +16,7 @@ import { NewGenreComponent } from './new-genre/new-genre.component';
 import { NewBookComponent } from './new-book/new-book.component';
 import { NewBookInstanceComponent } from './new-book-instance/new-book-instance.component';
 import { BookService } from './book.service';
+import { AuthorService } from './author.service';
 
 @NgModule({
   imports: [
@@ -39,10 +40,10 @@ import { BookService } from './book.service';
     NewAuthorComponent,
     NewGenreComponent,
     NewBookComponent,
-    NewBookInstanceComponent
+    NewBookInstanceComponent,
   ],
   bootstrap: [ AppComponent ],
-  providers: [BookService]
+  providers: [BookService, AuthorService]
 })
 
 export class AppModule { }
