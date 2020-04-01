@@ -1,18 +1,17 @@
 <h1>Local Library Home</h1>
+<div class="grid">
+  <nav>
+    <a routerLink="/home">Home</a><br>
+    <a routerLink="/books">All books</a><br>
+    <a routerLink="/authors">All authors</a><br>
+    <a routerLink="/genres">All genres</a><br>
+    <a routerLink="/book-instances">All book-instances</a><br>
+    <br>
+    <a routerLink="/new-author">Create new author</a><br>
+    <a routerLink="/new-genre">Create new genre</a><br>
+    <a routerLink="/new-book">Create new book</a><br>
+    <a routerLink="/new-book-instance">Create new book instance (copy)</a><br>
 
-<nav>
-  <a routerLink="/home">Home</a>
-  <a routerLink="/books">All books</a>
-  <a routerLink="/authors">All authors</a>
-  <a routerLink="/genres">All genres</a>
-  <a routerLink="/book-instances">All book-instances</a>
-</nav>
-<!--
-<create>
-  <a routerLink="/new-author">Create new author</a>
-  <a routerLink="/new-genre">Create new genre</a>
-  <a routerLink="/new-book">Create new book</a>
-  <a routerLink="/new-book-instance">Create new book instance (copy)</a>
-</create>
-
--->
+  </nav>
+</div>
+<router-outlet></router-outlet>
