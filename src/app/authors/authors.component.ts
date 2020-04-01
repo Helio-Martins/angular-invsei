@@ -18,7 +18,7 @@ export class AuthorsComponent implements OnInit {
   }
 
   getAuthors(): void {
-    this.authorService.getAuthors() .subscribe(authors => this.authors = authors));
+    this.authorService.getAuthors().subscribe(authors => this.authors = authors);
     console.log(this.authors);
   }
   
