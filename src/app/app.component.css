@@ -9,8 +9,13 @@
   grid-column-gap: 10px;
 }
 
-.nav {
+.navigate {
   grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.navigate a:visited, a:link {
+  text-decoration:none;
+  color: #3366BB;
 }
 
 .router {
