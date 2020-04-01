@@ -13,8 +13,8 @@ export class BookService {
 
   constructor(private http: HttpClient) { }
 
-  getBooks (): Observable<any> {
-    return this.http.get<any>(this.uri);
+  getBooks (): any {
+    return this.http.get(this.uri);
   }
 
 }
@@ -38,3 +38,4 @@ public mygetdata(): Observable<Data[]> {
             }
         })
 }
+*
