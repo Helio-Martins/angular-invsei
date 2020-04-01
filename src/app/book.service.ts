@@ -9,7 +9,7 @@ import { Book } from './book';
 @Injectable({ providedIn: 'root' })
 export class BookService {
 
-  private uri: 'http://localhost:3000/book_list';
+  private uri: 'localhost:3000/catalog/books';
 
   constructor(private http: HttpClient) { }
 
@@ -17,4 +17,24 @@ export class BookService {
     return this.http.get<any>(this.uri);
   }
 
+}
+/*
+constructor(private http: Http
+) { }
+public mygetdata(): Observable<Data[]> {
+    let headers = new Headers();
+    headers.append('user-key': 'xxx-xxx');
+
+    return this.http.get(this.apiUrl), {
+        headers: headers
+    })
+        .map((response: Response) => {
+            let res = response.json();
+            if (res.StatusCode === 1) {
+            } else {
+                return res.StatusDescription.map(data=> {
+                    return new Data(data);
+                });
+            }
+        })
 }

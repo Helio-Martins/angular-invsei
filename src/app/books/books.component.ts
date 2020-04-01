@@ -19,6 +19,7 @@ export class BooksComponent implements OnInit {
 
   getBooks(): void {
     this.bookService.getBooks().subscribe(books => this.books = JSON.parse(books));
+    console.log(this.books);
   }
   
 }
