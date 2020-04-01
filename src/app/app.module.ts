@@ -11,6 +11,10 @@ import { BooksComponent }  from './books/books.component';
 import { AuthorsComponent }      from './authors/authors.component';
 import { GenresComponent }  from './genres/genres.component';
 import { BookInstancesComponent }    from './book-instances/book-instances.component';
+import { NewAuthorComponent } from './new-author/new-author.component';
+import { NewGenreComponent } from './new-genre/new-genre.component';
+import { NewBookComponent } from './new-book/new-book.component';
+import { NewBookInstanceComponent } from './new-book-instance/new-book-instance.component';
 
 @NgModule({
   imports: [
@@ -29,7 +33,11 @@ import { BookInstancesComponent }    from './book-instances/book-instances.compo
     BooksComponent,
     AuthorsComponent,
     GenresComponent,
-    BookInstancesComponent
+    BookInstancesComponent,
+    NewAuthorComponent,
+    NewGenreComponent,
+    NewBookComponent,
+    NewBookInstanceComponent
   ],
   bootstrap: [ AppComponent ]
 })
